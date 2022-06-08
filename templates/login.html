@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" type ="text/css" href="/static/login.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    </head>
+
+<body>
+    <center>
+        <br>
+        <br>
+    <div class="container">
+        <h1>Login</h1>
+
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        {{ form.username }}
+        <br>
+        <br>
+        {{ form.password }}
+        <br>
+        <br>
+        {{ form.submit }}
+        
+    </form>
+
+    <a href="{{ url_for('register') }}">Don't have an account? Sign Up</a>
+      </div>
+    </center>
+
+
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+
+
+</html>
+{% endblock %}

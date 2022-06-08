@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <br>
+  <h1>Order details</h1>
+  <form action="" method="GET, POST">
+    <form>
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Last Name, First Name, Middle Initial" required>
+        </div>
+        <div class="form-group">
+          <label for="emailadd">Email address</label>
+          <input type="email" class="form-control" id="emailadd" placeholder="name@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="productype">Product Type</label>
+          <select class="form-control" id="productype" required>
+            <option value="" disabled>Select option</option>
+            <option>Swimsuit</option>
+            <option>Rash Guard</option>
+            <option>Sports Bra</option>
+          </select>
+        </div>
+        <label for="itemname">Item Name</label>
+        <input type="text" class="form-control" id="itemname" placeholder="Example: Aritha" required>
+        <div class="form-group">
+            <label for="size">Select Size</label>
+            <select class="form-control" id="size" required>
+            <option value=""disabled>Select  option</option>
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+              <option>Extra Large</option>
+            </select>
+
+          </div>
+          <div class="form-group">
+            <label for="notesarea">Notes for Seller</label>
+            <textarea class="form-control" id="notesarea" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary mb-2">Confirm Order</button>
+        </form>
+<a href="{{url_for('logout')}}">Press here to logout</a>
+      </div>
+{% endblock %}
+

@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" type ="text/css" href="/static/css/rash-guard.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+        <body>
+    <br>
+    <div class="container"> 
+            <table border="0">
+                <tr>
+                    <td colspan="4">
+                        <h1>Rash Guards</h1>
+                        <p>With our collection of women's swimwear, you'll be ready for relaxing days at the beach or by the pool. Classic one-piece swimsuits or adorable high-waisted bikini sets in vibrant colors and designs, as well as stylish neutrals, are offered. It's finally time for that much-needed vacation, so finish your outfit with BLISHOP's trendy pairs.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="5%"><br></td>
+                    <td width="25%">
+                        <img src="https://i.ibb.co/7Yzcyg2/r1.png">
+                        <p><a href="{{ url_for('r1') }}"><h4>Aritha</h4></a></p>
+                        <p>Price:649</p>
+                        <a href="{{url_for('r1')}}">Click for more details</a>
+                    </td>
+                    <td width="25%">
+                        <img src="https://i.ibb.co/Z68CjDY/r2.png">
+                        <p><a href="{{ url_for('r2') }}"><h4>Amethyst</h4></a></p>
+                        <p>Price:649</p>
+                        <a href="{{url_for('r2')}}">Click for more details</a>
+                    </td>
+                    <td width="25%">
+                        <img src="https://i.ibb.co/RQYkrns/r3.png">
+                        <p><a href="{{ url_for('r3') }}"><h4>Aqua</h4></a></p>
+                        <p>Price:549</p>
+                        <a href="{{url_for('r3')}}">Click for more details</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="5%"><br></td>
+                    <td>
+                        <img src="https://i.ibb.co/TTt5cWJ/r4.png">
+                        <p><a href="{{ url_for('r4') }}"><h4>Oceana</h4></a></p>
+                        <p>Price:799</p>
+                        <a href="{{url_for('r4')}}">Click for more details</a>
+                    </td>
+                    <td>
+                        <img src="https://i.ibb.co/9rGsBxb/r5.png">
+                        <p><a href="{{ url_for('r5') }}"><h4>Luxe</h4></a></p>
+                        <p>Price:799</p>
+                        <a href="{{url_for('r5')}}">Click for more details</a>
+                    </td>
+        
+                </tr>
+            </table>
+            </body>
+        </html>
+
+
+{% endblock %}

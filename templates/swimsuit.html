@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" type ="text/css" href="/static/css/swimsuit.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+        
+    </head>
+        <body>
+    <br>
+    <div class="container">
+            <table border="0">
+                <tr>
+                    <td colspan="4">
+                        <h1>Swimsuits</h1>
+                        <p>With our collection of women's swimwear, you'll be ready for relaxing days at the beach or by the pool. Classic one-piece swimsuits or adorable high-waisted bikini sets in vibrant colors and designs, as well as stylish neutrals, are offered. It's finally time for that much-needed vacation, so finish your outfit with BLISHOP's trendy pairs.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="5%"><br></td>
+                    <td width="25%">
+                        <img src="https://i.ibb.co/tmmbMD8/s1.png">
+                        <p><a href="{{ url_for('s1') }}"><h4>Valentine</h4></a></p>
+                        <p>Price:499</p>
+                        <a href="{{url_for('s1')}}">Click for more details</a>
+                    </td>
+                    <td width="25%">
+                        <img src="https://i.ibb.co/DQ5YYpP/s2.png">
+                        <p><a href="{{ url_for('s2') }}"><h4>Beth</h4></a></p>
+                        <p>Price:499</p>
+                        <a href="{{url_for('s2')}}">Click for more details</a>
+                    </td>
+                    <td width="25%">
+                        <img src="https://i.ibb.co/LSL2MzQ/s3.png">
+                        <p><a href="{{ url_for('s3') }}"><h4>Tiffany</h4></a></p>
+                        <p>Price:549</p>
+                        <a href="{{url_for('s3')}}">Click for more details</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="5%"><br></td>
+                    <td>
+                        <img src="https://i.ibb.co/S36nXqv/s4.png">
+                        <p><a href="{{ url_for('s4') }}"><h4>Shakira</h4></a></p>
+                        <p>Price:549</p>
+                        <a href="{{url_for('s4')}}">Click for more details</a>
+                    </td>
+                    <td>
+                        <img src="https://i.ibb.co/ZWDn26m/s5.png">
+                        <p><a href="{{ url_for('s5') }}"><h4>Poppy</h4></a></p>
+                        <p>Price:399</p>
+                        <a href="{{url_for('s5')}}">Click for more details</a>
+                    </td>
+    
+                </tr>
+            </table>
+     
+        </body>
+    </html>
+
+{% endblock %}
