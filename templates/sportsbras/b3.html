@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type ="text/css" href="/static/css/next&prev.css">
+</head>
+<body>
+	<center>
+		<br>
+		<img src="https://i.ibb.co/VDgwRx9/b3.png">
+		<div style="text-align: center;">
+		    <div style="display: inline-block; text-align: left;">
+				<h3>Name: Cherry</h3>
+				<p>Sizes: Small - Large</p>
+				<p>Description: Pastel pink sports bra</p>
+				<p>Material: Fabric: Nylon: 100%</p>
+				<p>Price: 599</p>
+			</div>
+		</div>
+		<a href="{{ url_for('b2') }}" class="previous round">&#8249;</a>
+		<a href="{{ url_for('b4') }}" class="next round">&#8250;</a>
+	</center>
+</body>
+</html>
+{% endblock %}

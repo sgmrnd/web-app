@@ -1,0 +1,61 @@
+
+<html lang="en" dir="ltr">
+    <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>BLISHOP</title>
+            <link rel="stylesheet" href="\static\css\navbar.css"> 
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body> 
+    
+    <div class="container-fluid">
+        <nav>
+    <div class="navbar">
+        <img src="https://i.ibb.co/XV3mzKM/blishop-logo.png" width="120" height="120" class="logo">
+    <ul>
+        <li> <a href="{{ url_for('index') }}"><i class="fa fa-home"></i> Home</a></i></li>
+        <li> <a href="{{ url_for('products') }}"><i class="fa fa-shopping-cart"></i>Products</a>
+        
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="{{ url_for('swimsuit') }}">Swimsuit</a></li>
+                    <li><a href="{{ url_for('rash_guard') }}">Rash Guard</a></li>
+                    <li><a href="{{ url_for('sports_bra') }}">Sports Bra</a></li>
+                </ul>
+            </div>
+        </li>
+        <li> <a href="{{ url_for('AboutUs') }}"><i class="fa fa-users"></i> About Us</a>
+
+            <div class="sub-menu-3">
+                <ul>
+                    <li><a href="{{ url_for('AboutUs') }}">Vision</a></li>
+                    <li><a href="{{ url_for('AboutUs') }}">Mission  </a></li>
+                </ul>
+            </div>
+        </li>
+        <li> <a href="{{ url_for('ContactUs') }}"><i class="fa fa-phone"></i> Contact Us</a>
+        
+            <div class="sub-menu-4">
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100081683234828" target="_blank"><i class="fa fa-facebook-official"></i> Facebook</a></li>
+                    <li><a href="mailto:blishophere@gmail.com"><i class="fa fa-envelope"></i> Email</a></li>
+                    <li><a href="https://www.instagram.com/blishop_found/" target="_blank"><i class="fa fa-instagram"></i> Instagram</a></li>
+                    <li><a href="https://twitter.com/blis_shop" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+                </ul>
+            </div>
+        </li>
+        <li> <a href="{{ url_for('order') }}"><i class="fa fa-mouse-pointer"></i> Order Now </a>
+        <li> <a href="{{ url_for('login') }}"><i class="fa fa-user"></i> Log In</a>
+        
+            <div class="sub-menu-2">
+                <ul>
+                    <li><a href="{{ url_for('login') }}"><i class="fa fa-sign-in"></i> Log In</a></li>
+                    <li><a href="{{ url_for('register') }}"><i class="fa fa-user-plus"></i> Sign Up</a></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+     </nav>
+</div>
+    
+</body>
